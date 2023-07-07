@@ -1,0 +1,1300 @@
+/*
+ Theme Name:   GeneratePress Child
+ Theme URI:    https://generatepress.com
+ Description:  Default GeneratePress child theme
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+
+
+/*Default*/
+
+
+:root{
+	--ColoPrincipal: #DAA659;
+	--ColorGris: #EAEBED;
+}
+
+html{
+	 scroll-behavior: smooth !important;
+		transition: 0.3s;
+}
+.entry-content > div.vc_row {
+    width: 100%;
+}
+h2,h2{
+	font-family:Mulish;
+}
+
+/*flechas carrusel*/
+@media only screen and (max-width: 600px){
+    .slick-next {
+        right: -10px;
+    }
+    .slick-prev {
+        left: -20px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+   h2{  
+    font-size: 30px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    a.boton-redireccion {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+
+/*-----------------------------------NAVBAR -----------------------------------*/
+.inside-header {
+    padding: 20px 40px 20px 10px !important;
+}
+.site-header {
+    background-color: transparent !important;
+	position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.site-header .header-image {
+    width: 100px;
+    background: white;
+    padding: 5px;
+    border-radius: 50px;
+}
+ 
+#site-navigation{
+    /* background-color: #bf932e59; */
+    background-color: #c9c9c936;
+    border-radius: 15px 15px 15px 15px;
+    padding: 0px 20px;
+}
+#site-navigation ul li a{
+    color: #ffffff;
+    font-weight: 500;
+    /* color: #D7AB5B; */
+    text-shadow: 0px 0px 8px #000000;
+}
+#site-navigation  .sub-menu.toggled-on a{
+	background: #e7e7e7;
+	
+}
+#site-navigation ul li a:hover {
+    transform: translateY(-5px);
+    color: #D7AB5B !important;
+    transition: 0.2s ease-in-out;
+}
+#site-navigation ul li.sfHover > a{
+    color: #DAA659;
+}
+
+ li .sub-menu{
+    background-color: #c9c9c936 !important;
+    border-radius: 0px 0px 15px 15px;
+}
+.current-menu-item {
+    background: #DAA659;;
+    color: #fff !important;
+}
+
+
+
+/*Media Query header*/
+@media only screen and (max-width: 1280px){
+	.site-header .header-image {
+		margin-left: 10%;
+	}
+	#site-navigation ul li a{
+		font-size:13px;
+	}
+}
+
+/*Media Query header*/
+@media only screen and (max-width: 768px){
+		 .mobile-menu-control-wrapper{
+			border-radius:10px !important;
+		}
+		#site-navigation{
+			 transition: right 0.3s ease-in-out;
+		}
+		#site-navigation.toggled {
+		margin-top: 0px !important;
+		padding-top: 15% !important;
+		left: 0 !important;
+		background-color: #daa659 !important;
+		width: 60% !important;
+		height: 100% !important;
+		position: fixed !important;
+		top: 0px !important;
+		border-radius: 0px;
+	}
+	.mobile-menu-control-wrapper.toggled{
+		position: fixed;
+		top: 85px;
+		right: 8%;
+		box-shadow: 0px 0px 2px 2px #f7be688c;
+	}
+	.inside-header {
+		padding: 40px 40px 40px 40px !important;
+	}
+	#site-navigation ul li a:hover {
+		transform: translateY(-5px);
+		color: #000000 !important;
+		transition: 0.2s ease-in-out;
+		text-shadow: 0px 9px 10px white;
+		border-bottom: 1px solid white;
+}
+	#site-navigation ul li a{
+    color: black;
+}
+	#site-navigation ul li.sfHover > a{
+   		color: #ffffff !important;
+}
+	#site-navigation .sub-menu.toggled-on li.sfHover > a{
+   		    color: #75640a !important;
+}
+	
+	#site-navigation li .sub-menu {
+  		border-radius: 0px 0px 0px 0px; 
+}
+	#site-navigation li#menu-item-68.sfHover {
+    margin-bottom: 5px;
+}
+}
+
+@media only screen and (max-width: 580px){
+	.site-header .header-image {
+		width: 75px;
+	}
+}
+
+
+ /* General*/ 
+
+
+@media only screen and (max-width: 768px){
+#RentaVacacional .slick-list.draggable, #RentaPorDias .slick-list.draggable, #RentaMensual .slick-list.draggable {
+    min-height: 610px;
+}
+}
+
+
+/*-----------------------------------Quienes Somos -----------------------------------*/
+div#QuienesSomos {
+  padding: 8% 5%;
+}
+div#QuienesSomos p{
+ font-family:Barlow;
+}
+
+#QuienesSomos .wpb_single_image img {
+    height: auto;
+    max-width: 85%;
+    vertical-align: top;
+    border-radius: 5%;
+}
+
+@media only screen and (max-width: 768px){
+	
+	.quienes_somos_Contenido.que_ofrecemos{
+    display: flex;
+    flex-direction: column-reverse;
+}
+	.quienes_somos_Contenido.que_ofrecemos .wpb_single_image{
+   	text-align:center !important;
+}
+	
+}
+
+@media only screen and (max-width: 580px){
+    .quienes_somos_Contenido{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .quienes_somos_Contenido .vc_btn3-container{
+            width: 100%;
+            text-align: center;
+    }
+    }
+
+
+/*-----------------------------------??????? -----------------------------------*/
+.titulos_items .wpb_wrapper .wpb_wrapper{
+	border-bottom: 2px solid  var(--ColoPrincipal);
+	padding:1% 0px ; 
+	width:50%;
+	margin: 0 auto;
+}
+.campo-imagen {
+    overflow: hidden;
+    height: 213px;
+    background-color: #DAA659;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+}
+.campo-imagen img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    min-height: 220px;
+}
+.contenedor-images{
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    max-height: 210px;
+}
+
+.cuerpo-renta .anterior {
+    font-size: 35px !important;
+    background-color: #daa65900 !important;
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 5%;
+    text-shadow: 2px 3px 1px #727272;
+	 transition: transform 0.3s;
+}
+.cuerpo-renta .siguiente {
+    font-size: 35px !important;
+    background-color: #daa65900 !important;
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    right: -17%;
+    text-shadow: 2px 3px 1px #727272;
+	 transition: transform 0.3s;
+}
+.cuerpo-renta button:hover {
+	color: #DAA659;
+	font-size: 38px !important;
+}
+
+@media only screen and (max-width: 600px){
+	.cuerpo-renta .siguiente {
+    right: -10%;
+}
+}
+@media only screen and (max-width: 480px){
+	.cuerpo-renta .siguiente {
+    right: -17%;
+}
+}
+@media only screen and (max-width: 380px){
+	.cuerpo-renta .siguiente {
+    right: -20%;
+}
+	.cuerpo-renta .anterior {
+    left: 10%;
+}
+}
+
+
+
+
+/*----------------------------Renta Vacacional */
+#RentaVacacional {
+    padding: 0% 5% 8% 5%;
+}
+#RentaVacacional .imagenf {    
+	border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+	max-height: 200px;
+}
+#RentaVacacional .datos {
+    min-height: 166px;
+}
+#RentaVacacional  .contenido-interno {
+  	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2% 4% 8% 4%;
+    border-radius: 15px 0px 15px 50px;
+    min-height: 305px;
+}
+#RentaVacacional  .renta-contenido {
+  	position: relative;
+}
+#RentaVacacional .disponibilidad-Disponible {
+    position: absolute;
+    z-index: 1;
+    background: #DAA659;
+    color: white;
+    padding: 0% 5%;
+    right: 0;
+	border-radius: 0px 15px 0px 0px;
+}
+#RentaVacacional .disponibilidad-Reservado {
+    position: absolute;
+    z-index: 1;
+    background: #E84756;
+    color: white;
+    padding: 0% 5%;
+    right: 0;
+	border-radius: 0px 15px 0px 0px;
+}
+#RentaVacacional .cuerpo-renta {
+    position: relative;
+    box-shadow: 0px 0px 5px -1px #7e7e7ec7;
+    border-radius: 15px;
+}
+#RentaVacacional    .slick-track {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 1%;
+
+}
+#RentaVacacional   h5{
+margin-bottom: 10px !important;	
+}
+#RentaVacacional   p{
+	margin-bottom:0px !important;
+	font-family:Barlow;
+}
+#RentaVacacional   h5{
+	font-weight:600;
+}
+#RentaVacacional   p{
+	font-weight:400;
+	font-size: 14px !important;
+    line-height: 18px !important;
+}
+#RentaVacacional .descripcion-renta {
+    display: flex;
+    padding-top: 10px;
+	width: 100%;
+}
+#RentaVacacional  ul {
+    gap: 3%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-left: 0px !important;
+}
+#RentaVacacional  .slick-prev:before, .slick-next:before {
+    font-size: 30px !important;
+    color: #DAA659 !important;
+}
+
+#RentaVacacional a.boton-redireccion {
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    background: #DAA659;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+#RentaVacacional .descripcion-renta li {
+	 list-style-type: none;
+	 display: flex;
+	 flex-wrap: wrap;
+	 gap: 10px;
+}
+#RentaVacacional .descripcion-renta li:hover {
+    transform: translateY(-5px);
+    transition: 0.2s ease-in-out;
+}
+
+#RentaVacacional .descripcion-renta li.hab a {
+	background-image: url(./img/room.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#RentaVacacional .descripcion-renta li.banos a{
+	background-image: url(./img/bathroom.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#RentaVacacional .descripcion-renta li.camas a{
+	background-image: url(./img/bed.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#RentaVacacional .descripcion-renta li.huespedes a{
+	background-image: url(./img/person.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 580px){
+#RentaVacacional .contenido-interno {  
+    padding: 2% 4% 5% 4%;
+    min-height: 290px;
+}
+}
+/*-----------------------------------Renta Por Dias  Edificio-----------------------------------*/
+
+#RentaPorDiasEdificio {
+    padding: 0% 5% 8% 5%;
+}
+#RentaPorDiasEdificio .imagenf {    
+	border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+	max-height: 200px;
+}
+#RentaPorDiasEdificio .datos {
+    min-height: 166px;
+}
+#RentaPorDiasEdificio  .contenido-interno {
+  	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2% 4% 5% 4%;
+    border-radius: 15px 0px 15px 50px;
+    min-height: 265px;
+    max-height: 330px;
+}
+#RentaPorDiasEdificio  .renta-contenido {
+  	position: relative;
+}
+#RentaPorDiasEdificio .disponibilidad-Disponible {
+    position: absolute;
+    z-index: 1;
+    background: #DAA659;
+    color: white;
+    padding: 0% 5%;
+    right: 0;
+	border-radius: 0px 5px 0px 0px;
+}
+#RentaPorDiasEdificio .disponibilidad-Reservado {
+    position: absolute;
+    z-index: 1;
+    background: #E84756;
+    color: white;
+    padding: 0% 5%;
+    right: 0;
+	border-radius: 0px 5px 0px 0px;
+}
+#RentaPorDiasEdificio .cuerpo-renta {
+    position: relative;
+    box-shadow: 0px 0px 5px -1px #7e7e7ec7;
+    border-radius: 15px;
+    background-color: white;
+}
+#RentaPorDiasEdificio    .slick-track {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 1%;
+
+}
+#RentaPorDiasEdificio   h5{
+margin-bottom: 10px !important;	
+}
+/* */
+#RentaPorDiasEdificio   p{
+	margin-bottom:0px !important;
+		font-family:Barlow;
+}
+#RentaPorDiasEdificio   h5{
+	font-weight:600;
+}
+#RentaPorDiasEdificio   p{
+	font-weight:400;
+	font-size: 14px !important;
+    line-height: 18px !important;
+}
+#RentaPorDiasEdificio .descripcion-renta {
+    display: flex;
+    padding-top: 10px;
+	width: 100%;
+}
+#RentaPorDiasEdificio  ul {
+    gap: 3%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-left: 0px !important;
+}
+#RentaPorDiasEdificio  .slick-prev:before, .slick-next:before {
+    font-size: 30px !important;
+    color: #DAA659 !important;
+}
+
+#RentaPorDiasEdificio a.boton-redireccion {
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    background: #DAA659;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+#RentaPorDiasEdificio .descripcion-renta li {
+	 list-style-type: none;
+	 display: flex;
+	 flex-wrap: wrap;
+	 gap: 10px;
+}
+#RentaPorDiasEdificio .descripcion-renta li:hover {
+    transform: translateY(-5px);
+    transition: 0.2s ease-in-out;
+}
+
+#RentaPorDiasEdificio .descripcion-renta li.hab a {
+	background-image: url(./img/room.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#RentaPorDiasEdificio .descripcion-renta li.banos a{
+	background-image: url(./img/bathroom.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#RentaPorDiasEdificio .descripcion-renta li.camas a{
+	background-image: url(./img/bed.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#RentaPorDiasEdificio .descripcion-renta li.huespedes a{
+	background-image: url(./img/person.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#renta-por-dias-edificio {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#RentaPorDiasEdificio .contenido-interno{
+color: #000000;
+}
+#RentaPorDiasEdificio .titulos_items{
+    color: white;
+    filter: drop-shadow(0px 3px 5px black);
+}
+#RentaPorDiasEdificio  .imagen-edificio-renda-diaria figure > div{
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+ 
+}
+#RentaPorDiasEdificio .informacion-edificio .imagen-edificio-renda-diaria {
+    color: white;
+    position: relative;
+}
+#RentaPorDiasEdificio .imagen-edificio-renda-diaria::after{
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 70%;
+    height: 3px;
+    left: 50%;
+    bottom: -5%;
+    transform: translate(-50%, -50%);
+}
+#RentaPorDiasEdificio .slick-prev:before, .slick-next:before {
+    filter: drop-shadow(1px 1px 4px black);
+}
+
+#RentaPorDiasEdificio .informacion-edificio h2 {
+    /*filter: drop-shadow(2px 4px 6px black);*/
+    font-size: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#RentaPorDiasEdificio .informacion-edificio p {
+    filter: drop-shadow(0px 3px 15px black);
+    /*text-shadow: 0px 0px 3px black;*/
+    line-height: 20px !important;
+    font-size: 15px !important;
+}
+#RentaPorDiasEdificio  .campo-carrusel-edificio{
+    display: flex;
+    align-items: end;
+}
+
+#RentaPorDiasEdificio  .cuerpo-renta .anterior {
+    left: 20px;
+}
+#RentaPorDiasEdificio  .cuerpo-renta .siguiente {
+    right: -50px;
+}
+
+/*----------------------------Renta por dias edificio-----------------*/
+
+.titulos_items .wpb_wrapper .renta-por-dias-edificio  .wpb_wrapper {
+    border-bottom: none; 
+    padding: none; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+/*-----------------------------------Renta Por Dias -----------------------------------*/
+
+#RentaPorDias {
+    padding: 0% 5% 8% 5%;
+}
+#RentaPorDias .imagenf {    
+	border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+	max-height: 200px;
+}
+#RentaPorDias .datos {
+    min-height: 166px;
+}
+#RentaPorDias  .contenido-interno {
+  	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2% 4% 8% 4%;
+    border-radius: 15px 0px 15px 50px;
+   	min-height: 360px;
+}
+#RentaPorDias  .renta-contenido {
+  	position: relative;
+}
+#RentaPorDias .disponibilidad-Disponible {
+    position: absolute;
+    z-index: 1;
+    background: #DAA659;
+    color: white;
+    padding: 0% 5%;
+    right: 0;
+	border-radius: 0px 5px 0px 0px;
+}
+#RentaPorDias .disponibilidad-Reservado {
+    position: absolute;
+    z-index: 1;
+    background: #E84756;
+    color: white;
+    padding: 0% 5%;
+    right: 0;
+	border-radius: 0px 5px 0px 0px;
+}
+#RentaPorDias .cuerpo-renta {
+    position: relative;
+    box-shadow: 0px 0px 5px -1px #7e7e7ec7;
+    border-radius: 15px;
+}
+#RentaPorDias    .slick-track {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 1%;
+
+}
+#RentaPorDias   h5{
+margin-bottom: 10px !important;	
+}
+
+
+
+
+/* */
+#RentaPorDias   p{
+	margin-bottom:0px !important;
+		font-family:Barlow;
+}
+#RentaPorDias   h5{
+	font-weight:600;
+}
+#RentaPorDias   p{
+	font-weight:400;
+	font-size: 14px !important;
+    line-height: 18px !important;
+}
+#RentaPorDias .descripcion-renta {
+    display: flex;
+    padding-top: 10px;
+	width: 100%;
+}
+#RentaPorDias  ul {
+    gap: 3%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-left: 0px !important;
+}
+#RentaPorDias  .slick-prev:before, .slick-next:before {
+    font-size: 30px !important;
+    color: #DAA659 !important;
+}
+
+#RentaPorDias a.boton-redireccion {
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    background: #DAA659;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+#RentaPorDias .descripcion-renta li {
+	 list-style-type: none;
+	 display: flex;
+	 flex-wrap: wrap;
+	 gap: 10px;
+}
+#RentaPorDias .descripcion-renta li:hover {
+    transform: translateY(-5px);
+    transition: 0.2s ease-in-out;
+}
+
+#RentaPorDias .descripcion-renta li.hab a {
+	background-image: url(./img/room.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#RentaPorDias .descripcion-renta li.banos a{
+	background-image: url(./img/bathroom.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#RentaPorDias .descripcion-renta li.camas a{
+	background-image: url(./img/bed.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#RentaPorDias .descripcion-renta li.huespedes a{
+	background-image: url(./img/person.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+
+
+/*-----------------------------------Renta Por Mensual -----------------------------------*/
+
+#RentaMensual {
+    padding: 0% 5% 8% 5%;
+}
+#RentaMensual .imagenf {    
+	border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+	max-height: 200px;
+}
+#RentaMensual .datos {
+    min-height: 166px;
+}
+#RentaMensual  .contenido-interno {
+  	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2% 4% 8% 4%;
+    border-radius: 15px 0px 15px 50px;
+}
+#RentaMensual  .renta-contenido {
+  	position: relative;
+}
+#RentaMensual .disponibilidad-Disponible {
+    position: absolute;
+    z-index: 1;
+    background: #DAA659;
+    color: white;
+    padding: 0% 5%;
+    right: 0;
+	border-radius: 0px 5px 0px 0px;
+}
+#RentaMensual .disponibilidad-Reservado {
+    position: absolute;
+    z-index: 1;
+    background: #E84756;
+    color: white;
+    padding: 0% 5%;
+    right: 0;
+	border-radius: 0px 5px 0px 0px;
+}
+#RentaMensual .cuerpo-renta {
+    position: relative;
+    box-shadow: 0px 0px 5px -1px #7e7e7ec7;
+    border-radius: 15px;
+}
+#RentaMensual    .slick-track {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 1%;
+
+}
+#RentaMensual   h5{
+margin-bottom: 10px !important;	
+}
+
+
+
+
+/* */
+#RentaMensual   p{
+	margin-bottom:0px !important;
+	font-family:Barlow;
+}
+#RentaMensual   h5{
+	font-weight:600;
+}
+#RentaMensual   p{
+	font-weight:400;
+	font-size: 14px !important;
+    line-height: 18px !important;
+}
+#RentaMensual .descripcion-renta {
+    display: flex;
+    padding-top: 10px;
+	width: 100%;
+}
+#RentaMensual  ul {
+    gap: 3%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-left: 0px !important;
+}
+#RentaMensual  .slick-prev:before, .slick-next:before {
+    font-size: 30px !important;
+    color: #DAA659 !important;
+}
+
+#RentaMensual a.boton-redireccion {
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    background: #DAA659;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+#RentaMensual .descripcion-renta li {
+	 list-style-type: none;
+	 display: flex;
+	 flex-wrap: wrap;
+	 gap: 10px;
+}
+#RentaMensual .descripcion-renta li:hover {
+    transform: translateY(-5px);
+    transition: 0.2s ease-in-out;
+}
+
+#RentaMensual .descripcion-renta li.hab a {
+	background-image: url(./img/room.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#RentaMensual .descripcion-renta li.banos a{
+	background-image: url(./img/bathroom.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#RentaMensual .descripcion-renta li.camas a{
+	background-image: url(./img/bed.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+#RentaMensual .descripcion-renta li.huespedes a{
+	background-image: url(./img/person.png) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+}
+
+/*-----------------------------------Nuestros Clientes-Testimonios-----------------------------------*/ 
+#Testimonios {
+    padding: 5%;
+}
+
+#Testimonios .imagenf {
+    border-radius: 15px;
+    overflow: hidden;
+	max-height: 200px;
+}
+	
+#Testimonios  .autor {
+    border-radius: 20px;
+   	min-height: 150px;
+   /* max-height: 230px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    background: #EAEBED;
+    width: 80%;
+    margin: 0 auto;
+     padding: 4% 8%;
+    transform: translate(-50%, -50%);
+    left: 43%;
+   	bottom: -50px;
+}
+#Testimonios .imagen {
+    overflow: hidden;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    left: 20px;
+    top: 10px;
+    border: 10px solid #EAEBED;
+}
+#Testimonios .datos {
+    width: 100%;
+    text-align: center;
+    padding-left: 50px;
+}
+#Testimonios .testimonio {
+     width: 100%; 
+}
+#Testimonios  p {
+    line-height: 16px;
+    font-size: 14px;
+}
+#Testimonios   .slick-track {
+    display: flex;
+    gap: 30px;
+}
+#Testimonios   h5,#Testimonios   p{
+	margin-bottom:0px !important;
+}
+#Testimonios   h5{
+	font-weight:600;
+}
+#Testimonios   p{
+	font-weight:400;
+		font-family:Barlow;
+}
+
+#Testimonios  .slick-prev:before, .slick-next:before {
+    font-size: 30px !important;
+    color: #DAA659 !important;
+}
+
+
+
+@media only screen and (max-width: 768px){
+#Testimonios .autor {  
+   	max-height: 220px;
+    min-height: 220px;
+    width: 85%;  
+    transform: translate(-50%, -50%);
+    left: 45%;
+    bottom: -50px;
+}
+#Testimonios .slick-prev, #Testimonios  .slick-next{
+    z-index: 1 !important;
+}
+}
+
+@media only screen and (max-width: 480px){
+	#Testimonios .autor {
+        max-height: 220px;
+        min-height: 220px;    
+        width: 90%;    
+        left: 48%;
+        bottom: -80px;
+    }
+}
+
+
+
+/*-----------------------------------FORM -----------------------------------*/
+
+div#formulario{
+	background-color:var(--ColorGris);
+	padding: 0% 15%;
+}
+
+
+div#formulario .wpb_wrapper .vc_row.wpb_row{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+textarea.wpcf7-form-control.wpcf7-textarea {
+    height: 120px;
+}
+div#formulario input:not([type="checkbox"]){
+	width:100%;
+	background-color: #ffffff;
+}
+div#formulario input.wpcf7-form-control.has-spinner.wpcf7-submit {
+    width: 100%;
+    background-color: var(--ColoPrincipal);
+	border-radius: 5px;
+}
+div#formulario .vc_col-sm-4 h2{
+	border-bottom: 2px solid  var(--ColoPrincipal);
+	padding:2% 0px ; 
+}
+div#formulario  .campo_Info_form {
+	padding: 0px 4%;
+	min-width: 320px;
+}
+div#formulario  p {
+    margin-bottom: 15px !important;
+}
+
+
+@media only screen and (max-width: 1280px){
+	div#formulario {
+    padding: 0% 5%;
+}
+}
+
+@media only screen and (max-width: 960px){
+.Formulario-interno{
+		width:100% !important; 
+	}
+}
+
+@media only screen and (max-width: 768px){
+	div#formulario .vc_col-sm-3 img{
+		max-width: 40%;
+	}
+}
+
+
+/*----------------------------FOOTER-----------------------------------*/ 
+
+.footer-widgets-container{
+	padding-right: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left:0px !important;
+	padding-top: 0px !important;
+}
+.inside-footer-widgets{
+	padding: 40px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inside-footer-widgets, .inside-site-info{
+	background-color: #2A2A2A !important;
+	color: white;
+}
+.inside-footer-widgets:hover{
+	color: var(--ColoPrincipal);
+}
+.footer-widget-3 > aside:not(#block-13){
+	  margin-bottom: 0px !important;
+}
+.footer-widgets-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.wp-social-link-wordpress {
+	background-color: #FE5F5E !important;
+	overflow: hidden;
+}
+.wp-social-link-wordpress  a{
+	background-image: url(./img/airbnbblanco1.png) !important;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-decoration: none;
+}
+.wp-social-link-wordpress  svg path{
+display:none !important;
+}
+ul.wp-block-social-links.aligncenter.is-content-justification-center.is-layout-flex.wp-container-1 {
+    display: flex;
+    align-items: baseline;
+}
+
+
+
+/*----------------------------Boton Whatsapp-----------------------------------*/ 
+
+/* Boton flotante de whatsapp*/
+ .container-boton{
+	position:fixed;
+	right: 25px;
+    bottom: 25px;
+  z-index: 1000 !important; /* Poner las cosas por encima de otras 0  por debajo  -100 por encima*/
+  
+}
+#boton_whatsapp{
+	display: block;
+	text-decoration: none;
+	background: #00c721;
+  	color: #fff0;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	transition: ease 0.9s;
+	animation: efecto 1.5s infinite;
+}
+.whatsapp_logo{
+	background-image: url(./img/whatsapp_logo);
+	background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-decoration: none;
+    padding: 50%;
+	transform: translateY(-27px) !important;
+}
+
+#boton_whatsapp:hover{
+	transform: scale(1.1);
+	transition: 0.3s;
+}
+
+@keyframes efecto{
+0%{
+	box-shadow:0 0 0 5px rgba(24, 238, 5, 0.85);
+}
+100%{
+	box-shadow: 0 0 0 1px rgba(20, 23, 212, 0);
+}
+}
+ /* fin Boton flotante de whatsapp*/
+
+
+a.generate-back-to-top.generate-back-to-top__show {
+    bottom: 90px;
+}
+
+
+
+/*----------------------------POLTIICA DE PRIVACIDAD */ 
+
+body.privacy-policy #site-navigation, body.privacy-policy .main-navigation{
+	display:none;
+}
+
+.Politica-de-privacidad h1  {
+    margin-top: 10%;
+}
+
+.Politica-de-privacidad h4 {
+    background: #DAA659;
+    color: white;
+    padding: 1% 0%;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 4%;
+}
+
+.Politica-de-privacidad{
+	padding: 0% 5%;
+}
+
+@media only screen and (max-width: 480px){
+		.Politica-de-privacidad h4 {
+			font-size:19px;
+		}
+
+		.Politica-de-privacidad h1  {			
+    		font-size: 30px;
+		}
+}
+
+
+
